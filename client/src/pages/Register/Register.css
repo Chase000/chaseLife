@@ -1,0 +1,36 @@
+.full-page {
+  display: grid;
+  align-items: center;
+}
+
+.full-page .form .logo {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+.full-page .form {
+  max-width: 400px;
+  border-top: 5px solid var(--primary-500);
+}
+
+.full-page h3 {
+  text-align: center;
+}
+.full-page p {
+  margin: 0;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.full-page .form .btn {
+  margin-top: 1rem;
+}
+
+.full-page .member-btn {
+  background: transparent;
+  border: transparent;
+  color: var(--primary-500);
+  cursor: pointer;
+  letter-spacing: var(--letterSpacing);
+}

@@ -1,0 +1,86 @@
+.StatItem {
+  padding: 2rem;
+  background: var(--white);
+  border-radius: var(--borderRadius);
+  border-bottom: 5px solid
+}
+
+.StatItem[name='pending applications'] {
+  border-bottom-color: #e9b949;
+}
+
+.StatItem[name='interviews scheduled'] {
+  border-bottom-color: #647acb
+}
+
+.StatItem[name='jobs declined'] {
+  border-bottom-color: #d66a6a
+}
+
+.StatItem header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.StatItem .count {
+  display: block;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.StatItem .count[name='pending applications'] {
+  color:#e9b949
+}
+
+.StatItem .count[name='interviews scheduled'] {
+  color:#647acb
+}
+
+.StatItem .count[name='jobs declined'] {
+  color:#d66a6a
+}
+
+.StatItem .title {
+  margin: 0;
+  text-transform: capitalize;
+  letter-spacing: var(--letterSpacing);
+  text-align: left;
+  margin-top: 0.5rem;
+}
+
+.StatItem .icon {
+  width: 70px;
+  height: 60px;
+  border-radius: var(--borderRadius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.StatItem .icon[name='pending applications'] {
+  background:#fcefc7
+}
+
+.StatItem .icon[name='interviews scheduled'] {
+  background:#e0e8f9
+}
+.StatItem .icon[name='jobs declined'] {
+  background:#ffeeee
+}
+
+.StatItem .icon svg {
+  font-size: 2rem;
+}
+
+.StatItem .icon[name='pending applications'] svg{
+  color:#e9b949
+}
+
+.StatItem .icon[name="interviews scheduled"] svg {
+  color:#647acb
+}
+
+.StatItem .icon[name="jobs declined"] svg {
+  color:#d66a6a
+}

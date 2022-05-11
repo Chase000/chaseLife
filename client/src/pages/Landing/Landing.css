@@ -1,0 +1,48 @@
+
+.landing .landingLogo {
+  width: var(--fluid-width);
+  max-width: var(--max-width);
+  margin: 0 auto 30px auto;
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  /* position: relative;
+  left: -500px; */
+}
+
+.landing .page {
+  min-height: calc(100vh - var(--nav-height));
+  display: grid;
+  align-items: center;
+  margin-top: -3rem;
+}
+
+.landing h1 {
+  font-weight: 700;
+}
+
+.landing h1 span {
+  color: var(--primary-500);
+}
+
+.landing p {
+  color: var(--grey-600);
+}
+
+.landing .main-img {
+  display: none;
+}
+
+.landing .logo {
+  height: 100%;
+}
+
+@media (min-width: 992px) {
+  .landing .page {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+  }
+  .landing .main-img {
+    display: block;
+  }
+}

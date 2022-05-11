@@ -1,0 +1,25 @@
+.jobsContainer {
+  margin-top: 4rem;
+}
+
+.jobsContainer h2 {
+  text-transform: none;
+}
+
+.jobsContainer > h5 {
+  font-weight: 700;
+}
+
+.jobsContainer .jobs {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+}
+
+@media (min-width: 992px) {
+  .jobsContainer .jobs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}

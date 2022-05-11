@@ -1,0 +1,21 @@
+.jobInfo {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.jobInfo .icon {
+  font-size: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  
+}
+
+.jobInfo icon svg {
+  color: var(--grey-400);
+}
+.jobInfo .text {
+  text-transform: capitalize;
+  letter-spacing: var(--letterSpacing);
+}
