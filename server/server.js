@@ -13,6 +13,9 @@ import authenticateUser from './middleware/auth.js'
 import { dirname } from 'path'
 import { fileURLToPath } from 'url'
 import path from 'path'
+import helmet from 'helmet'
+import xss from 'xss-clean'
+import mongoSanitize from 'express-mongo-sanitize'
 
 dotenv.config()
 
@@ -26,6 +29,9 @@ const __dirname = dirname(dirname(fileURLToPath(import.meta.url)))
 app.use(express.static(path.resolve(__dirname, './client/build')))
 
 app.use(express.json())
+app.use(helmet())
+app.use(xss())
+app.use(mongoSanitize())
 
 app.get('/', (req, res) => {
   res.json({msg:'welcome'})
